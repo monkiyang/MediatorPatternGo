@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "MKRootViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,9 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    MKRootViewController *rtViewController = [[MKRootViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:rtViewController];
+    
+    self.window = [[UIWindow alloc] init];
+    _window.rootViewController = navigationController;
+    [_window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setTranslucent:NO];
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
