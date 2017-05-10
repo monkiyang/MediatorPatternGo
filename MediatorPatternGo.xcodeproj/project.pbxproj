@@ -153,14 +153,14 @@
 		850870871EC2DFC300A79C08 /* MKMediator */ = {
 			isa = PBXGroup;
 			children = (
+				8508708E1EC2DFC300A79C08 /* MKMediator.h */,
+				8508708F1EC2DFC300A79C08 /* MKMediator.m */,
 				850870881EC2DFC300A79C08 /* MKMediator+ModuleA.h */,
 				850870891EC2DFC300A79C08 /* MKMediator+ModuleA.m */,
 				8508708A1EC2DFC300A79C08 /* MKMediator+ModuleB.h */,
 				8508708B1EC2DFC300A79C08 /* MKMediator+ModuleB.m */,
 				8508708C1EC2DFC300A79C08 /* MKMediator+ModuleC.h */,
 				8508708D1EC2DFC300A79C08 /* MKMediator+ModuleC.m */,
-				8508708E1EC2DFC300A79C08 /* MKMediator.h */,
-				8508708F1EC2DFC300A79C08 /* MKMediator.m */,
 			);
 			path = MKMediator;
 			sourceTree = "<group>";
